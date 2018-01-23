@@ -10,16 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textDetails: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+
+    }
+    
+    @IBAction func actionMovedToWriteDetails(_ sender: Any) {
+        let details = self.storyboard?.instantiateViewController(withIdentifier: "AddDetails") as! AddDetails
+        details.delegate = self
+        present(details, animated: true, completion: nil)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension ViewController: AddDetailsDelegate{
+    
+    func getDetailsData(_ details: String) {
+        textDetails.text = details
     }
-
-
+    
 }
 

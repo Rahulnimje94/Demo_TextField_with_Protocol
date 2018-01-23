@@ -14,6 +14,7 @@
 		175E04082014609B004DB4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175E04062014609B004DB4F8 /* LaunchScreen.storyboard */; };
 		175E04132014609B004DB4F8 /* Demo_ProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E04122014609B004DB4F8 /* Demo_ProtocolTests.swift */; };
 		175E041E2014609B004DB4F8 /* Demo_ProtocolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E041D2014609B004DB4F8 /* Demo_ProtocolUITests.swift */; };
+		175E042C20146170004DB4F8 /* AddDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E042B20146170004DB4F8 /* AddDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		175E04192014609B004DB4F8 /* Demo-ProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo-ProtocolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		175E041D2014609B004DB4F8 /* Demo_ProtocolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_ProtocolUITests.swift; sourceTree = "<group>"; };
 		175E041F2014609B004DB4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175E042B20146170004DB4F8 /* AddDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,6 @@
 				175E03FC2014609B004DB4F8 /* Demo-Protocol */,
 				175E04112014609B004DB4F8 /* Demo-ProtocolTests */,
 				175E041C2014609B004DB4F8 /* Demo-ProtocolUITests */,
-				175E03FB2014609B004DB4F8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,12 +93,14 @@
 				175E04192014609B004DB4F8 /* Demo-ProtocolUITests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		175E03FC2014609B004DB4F8 /* Demo-Protocol */ = {
 			isa = PBXGroup;
 			children = (
 				175E03FD2014609B004DB4F8 /* AppDelegate.swift */,
+				175E042B20146170004DB4F8 /* AddDetails.swift */,
 				175E03FF2014609B004DB4F8 /* ViewController.swift */,
 				175E04012014609B004DB4F8 /* Main.storyboard */,
 				175E04042014609B004DB4F8 /* Assets.xcassets */,
@@ -110,6 +113,7 @@
 		175E04112014609B004DB4F8 /* Demo-ProtocolTests */ = {
 			isa = PBXGroup;
 			children = (
+				175E03FB2014609B004DB4F8 /* Products */,
 				175E04122014609B004DB4F8 /* Demo_ProtocolTests.swift */,
 				175E04142014609B004DB4F8 /* Info.plist */,
 			);
@@ -260,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				175E04002014609B004DB4F8 /* ViewController.swift in Sources */,
+				175E042C20146170004DB4F8 /* AddDetails.swift in Sources */,
 				175E03FE2014609B004DB4F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
